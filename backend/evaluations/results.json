@@ -1,0 +1,7 @@
+{
+    "prompt_injection_block_rate": 100.0,
+    "pii_redaction_rate": 100.0,
+    "output_leakage_block_rate": 100.0,
+    "normal_request_pass_rate": 100.0,
+    "false_positive_rate": 0.0
+}
