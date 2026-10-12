@@ -40,51 +40,6 @@ Testing| Pytest
 Containerization| Docker, Docker Compose
 CI| GitHub Actions
 
-Architecture
-
-Client (Next.js)
-       |
-       v
-FastAPI REST API
-       |
-       v
-JWT Authentication
-       |
-       v
-Redis Rate Limiting
-       |
-       v
-Input Guardrails
-  |            |
-  v            v
-Prompt         PII Detection
-Injection      & Redaction
-Detection
-       |
-       v
-LangGraph Workflow
-       |
-       v
-OpenAI API
-       |
-       v
-Output Guardrails
-       |
-       v
-Response to Client
-
-PostgreSQL: Users and Security Events
-
-Evaluation Dataset
-       |
-       v
-Evaluation Runner
-       |
-       v
-Metrics JSON
-       |
-       v
-Evaluation API and Dashboard
 
 Evaluation Results
 
@@ -101,29 +56,6 @@ Note: These metrics represent results on the current, limited evaluation dataset
 
 Project Structure
 
-evaluated-guardrail-agent/
-├── .github/
-│   └── workflows/
-│       └── ci.yml
-├── backend/
-│   ├── app/
-│   │   ├── agents/
-│   │   ├── api/routes/
-│   │   ├── auth/
-│   │   ├── core/
-│   │   ├── database/
-│   │   ├── guardrails/
-│   │   ├── redis/
-│   │   └── services/
-│   ├── alembic/
-│   ├── evaluations/
-│   ├── Dockerfile
-│   └── requirements.txt
-├── frontend/
-│   └── app/
-├── docker-compose.yml
-├── pytest.ini
-└── README.md
 
 Prerequisites
 
